@@ -44,14 +44,33 @@
   height: 680px;
 }
 .vid-txt p {
-  margin-top: 10px;
   margin: auto;
+  margin-top: 10px;
 }
 .vid-txt video {
-  margin-top: 10px;
   margin: auto;
+  margin-top: 10px;
   width: 888px;
   height: 640px;
+} 
+.video-block {
+  margin: auto;
+  margin-bottom: 10px;
+}
+.video-block p {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.video-block a {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.dot-list {
+  list-style-type: disc; /* 小圆点样式 */
+  padding-left: 20px; /* 左侧缩进，使其与父级列表项对齐 */
 }
 
 .bal-before {

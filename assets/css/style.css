@@ -2171,6 +2171,16 @@ Breadcrumb
     .section__title .title {
       font-size: 32px; } }
 
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 将内容水平居中 */
+  margin-bottom: 10px;
+} .title {
+  margin-right: 10px; /* 调整文字和图标之间的间距 */
+}
+
+    
 .about {
   position: relative;
   padding: 180px 0 0; }
@@ -2427,7 +2437,8 @@ Breadcrumb
       margin-top: 30px; }
       .about__info__wrap .tab-content .desc {
         padding-right: 45px;
-        margin-bottom: 32px; }
+        margin-bottom: 32px; 
+        max-width: 767.98px;}
         @media (max-width: 1199.98px) {
           .about__info__wrap .tab-content .desc {
             padding-right: 0; } }
@@ -3858,8 +3869,6 @@ Breadcrumb
     width: 81px;
     margin: 27px auto 0; }
     .testimonial__style__two .testi__avatar__img img {
-      border: 1px solid #222427;
-      box-shadow: 0px 5px 8px #F4F4F4;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       border-radius: 50%; }

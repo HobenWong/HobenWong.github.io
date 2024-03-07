@@ -245,8 +245,6 @@
         width: 81px;
         margin: 27px auto 0;
         & img {
-            border: 1px solid #222427;
-            box-shadow: 0px 5px 8px #F4F4F4;
             @include radius(50%);
         }
     }
