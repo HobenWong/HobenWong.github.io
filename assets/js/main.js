@@ -92,41 +92,6 @@ $(function () {
 	});
 });
 
-$(function() {
-	
-	const carousel = document.querySelector('.carousel');
-	console.log('hhb3', videos)
-
-	const carouselItems = document.querySelector('.carousel-items');
-	console.log('hhb2', videos)
-
-	const videos = carouselItems.querySelectorAll('video');
-	console.log('hhb', videos)
-	const videoWidth = carousel.offsetWidth; // 获取容器的宽度
-
-	let currentVideo = 0;
-
-	function slide() {
-		currentVideo++;
-		if (currentVideo >= videos.length) {
-			currentVideo = 0;
-		}
-		carouselItems.style.transform = `translateX(-${currentVideo * videoWidth}px)`;
-		
-		// 播放当前视频
-		videos[currentVideo].play(); 
-		// 暂停其他视频
-		videos.forEach((video, index) => {
-			if (index !== currentVideo) {
-				video.pause();
-			}
-		});
-	}
-
-	// 每 5 秒自动轮播
-	setInterval(slide, 5000);
-})
-
 /*=============================================
 	=    		 Tab Switcher		      =
 =============================================*/
