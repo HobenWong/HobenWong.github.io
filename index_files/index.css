@@ -73,6 +73,35 @@
   padding-left: 20px; /* 左侧缩进，使其与父级列表项对齐 */
 }
 
+.about__image {
+  text-align: center;
+  margin-bottom: 50px; 
+}
+
+.about__content {
+  margin-left: 0; 
+}
+
+.about__education__item {
+  width: 85%;
+  margin-bottom: 60px; }
+  @media (max-width: 1199.98px) {
+    .about__education__item {
+      width: 100%; } }
+  .about__education__item .title {
+    font-size: 22px;
+    margin-bottom: 12px; }
+  .about__education__item .date {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    color: #FCAF17;
+    margin-bottom: 11px; }
+  .about__education__item p {
+    margin-bottom: 0; 
+}
+
 .bal-before {
   display: block;
   position: absolute;
