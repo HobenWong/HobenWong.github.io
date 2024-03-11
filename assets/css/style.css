@@ -2373,7 +2373,7 @@ Breadcrumb
         .about__exp__content p br {
           display: none; } }
   .about.about__style__two {
-    padding: 120px 0 120px; }
+    padding: 40px 0 100px; }
     .about.about__style__two::before {
       display: none; }
     @media (max-width: 991.98px) {
@@ -2394,7 +2394,7 @@ Breadcrumb
       .about.about__style__two .section__title {
         margin-bottom: 30px; } }
   .about__info__wrap {
-    margin-top: 120px; }
+    margin-top: 40px; }
     .about__info__wrap .nav-tabs {
       border: none; }
       .about__info__wrap .nav-tabs .nav-item {
@@ -2416,7 +2416,7 @@ Breadcrumb
           background: #F7F7F7; }
           @media (max-width: 991.98px) {
             .about__info__wrap .nav-tabs .nav-item .nav-link {
-              padding: 15px 48px; } }
+              padding: 15px 40px; } }
           .about__info__wrap .nav-tabs .nav-item .nav-link::after {
             content: "";
             position: absolute;
@@ -2472,13 +2472,22 @@ Breadcrumb
         width: 95%; } }
     @media (max-width: 767.98px) {
       .about__skill__item {
-        width: 100%; } }
+        width: 100%; 
+        display: flex;} }
     .about__skill__item .title {
       font-family: "Roboto", sans-serif;
       color: #68666C;
       text-transform: uppercase;
       font-size: 14px;
-      letter-spacing: 0.02em;}
+      letter-spacing: 0.02em;
+      flex: 1;}
+      .about__skill__item .num {
+        font-family: "Roboto", sans-serif;
+        color: #68666C;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        text-align: right;}
     .about__skill__item .progress {
       background: #F7F7F7;
       height: 6px;
@@ -3671,14 +3680,12 @@ Breadcrumb
   .testimonial__content p {
     margin-bottom: 0;
     text-align: left;
-    font-family: "Playfair Display", serif;
     color: #191B1E;
-    font-size: 20px;
-    line-height: 1.6;
-    font-weight: 500; }
+    font-size: 18px;
+    line-height: 1.6;}
     @media (max-width: 767.98px) {
       .testimonial__content p {
-        font-size: 18px; } }
+        font-size: 16px; } }
   .testimonial__avatar {
     margin-top: 35px; }
     @media (max-width: 767.98px) {
@@ -3864,7 +3871,7 @@ Breadcrumb
   .testimonial__style__two .section__title {
     margin-bottom: 55px; }
   .testimonial__style__two .testimonial__item {
-    text-align: center; }
+    text-align: left; }
     @media (max-width: 1199.98px) {
       .testimonial__style__two .testimonial__item {
         margin: 0; } }
