@@ -206,3 +206,17 @@
     font-size: 36px;
   } 
 }
+
+.photo-wall {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: auto;
+} .photo-wall  img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 40%;
+} @media (max-width: 767.98px) { .photo-wall img {
+  width: 80%;
+} 
+}
