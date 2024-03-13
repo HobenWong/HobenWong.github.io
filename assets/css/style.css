@@ -2373,7 +2373,7 @@ Breadcrumb
         .about__exp__content p br {
           display: none; } }
   .about.about__style__two {
-    padding: 40px 0 100px; }
+    padding: 40px 0 50px; }
     .about.about__style__two::before {
       display: none; }
     @media (max-width: 991.98px) {
@@ -2462,10 +2462,10 @@ Breadcrumb
     padding-top: 15px;
   }
   .about__skill__wrap {
-    margin-top: 50px;
-    margin-bottom: -55px; }
+    margin-top: 0px;
+  }
   .about__skill__item {
-    margin-bottom: 55px;
+    margin-bottom: 20px;
     width: 89%; }
     @media (max-width: 991.98px) {
       .about__skill__item {
@@ -2508,7 +2508,7 @@ Breadcrumb
           top: -22px;
           letter-spacing: 0.02em; }
   .about__award__wrap {
-    margin-top: 60px;
+    margin-top: 0px;
     margin-bottom: -58px; }
   .about__award__item {
     display: flex;
@@ -2556,7 +2556,7 @@ Breadcrumb
       -ms-transform: rotateY(360deg);
       transform: rotateY(360deg); }
   .about__education__wrap {
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: -63px; }
   .about__education__item {
     width: 85%;

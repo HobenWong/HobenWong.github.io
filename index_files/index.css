@@ -59,7 +59,7 @@
   height: auto;
 } @media (max-width: 1500px) {
   .vid-txt {
-    max-width: 60%; margin: auto;
+    max-width: 100%; margin: auto;
   } 
 } @media (max-width: 1199.98px) {
   .vid-txt {
@@ -82,18 +82,16 @@
 } 
 
 .vid-txt-wide {
-  padding: 30px;
   text-align: left;
   margin: auto;
   display: flex;
-  justify-content: left;
-  align-items: left;
+  justify-content: center;
   flex-direction: column;
   max-width: 70%;
   height: auto;
 } @media (max-width: 1500px) {
   .vid-txt-wide {
-    max-width: 80%; margin: auto;
+    max-width: 100%; margin: auto;
   } 
 } @media (max-width: 1199.98px) {
   .vid-txt-wide {
@@ -105,18 +103,19 @@
   } 
 }
 .vid-txt-wide p {
-  margin: auto;
+  margin: 0;
   margin-top: 10px;
 }
 .vid-txt-wide video {
-  margin: auto;
+  margin: 0;
   margin-top: 10px;
   width: max-content;
   height: max-content;
 } 
 .video-block {
-  margin: auto;
+  margin: 0;
   margin-bottom: 10px;
+  text-align: center;
 }
 .video-block p {
   font-weight: bold;
@@ -225,4 +224,70 @@
 } @media (max-width: 767.98px) { .photo-wall img {
   width: 80%;
 } 
+}
+
+.section_title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.section_title::before,
+.section_title::after {
+  content: '';
+  flex: 1;
+  border-bottom: 2px solid #000;
+}
+
+.section_title::before {
+  margin-right: 10px;
+}
+
+.section_title::after {
+  margin-left: 10px;
+}
+
+/* 可以根据需要调整标题的样式 */
+.section_title span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 内容样式 */
+.content {
+  margin: 10px 0;
+}
+
+@media (max-width: 767.98px) { .slider-navigation-next {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+  } 
+}
+
+@media (max-width: 767.98px) { .slider-navigation-previous {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+  } 
+}
+
+@media (max-width: 1500px) {
+  .detail_container {
+    max-width: 85%;
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+@media (max-width: 767.98px) { 
+  .detail_container {
+    padding: 10px;
+  } .introduce_container {
+    padding-bottom: 20px;
+    text-align: left;
+  }
 }
