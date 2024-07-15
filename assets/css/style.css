@@ -23,7 +23,7 @@
     10. Blog
     11. Pagination
     12. Contact
-    13. Footer
+    13. hoben-footer
     14. Preloader
     15. Dark Mode
 
@@ -72,7 +72,7 @@ a:focus,
 
 a:hover,
 .portfolio-cat a:hover,
-.footer -menu li a:hover {
+.hoben-footer -menu li a:hover {
   color: #0054FF;
   text-decoration: none; }
 
@@ -229,9 +229,7 @@ label {
     - Bootstrap Custom
 =============================*/
 .container {
-  padding-left: 15px;
-  padding-right: 15px; 
-  max-width: 85%;}
+  max-width: 100%;}
 
 .row {
   --bs-gutter-x: 30px; }
@@ -2443,15 +2441,24 @@ Breadcrumb
         @media (max-width: 1199.98px) {
           .about__info__wrap .tab-content .desc {
             padding-right: 0; } }
+  .about__exp__list {
+    display: flex;
+    flex-direction: column; /* 将列表项垂直排列 */
+    align-items: baseline; /* 列表项内容水平居中对齐 */
+    padding: 0; /* 确保没有内边距 */
+  }
   .about__exp__list li {
+    align-items: center;
     width: 60%;
     margin-bottom: 35px; }
     @media (max-width: 1199.98px) {
       .about__exp__list li {
-        width: 60%; } }
+        width: 60%; 
+        margin-left: 0; /* 确保左对齐 */} }
     @media (max-width: 991.98px) {
       .about__exp__list li {
-        width: 60%; } }
+        width: 60%; 
+        margin-left: 0; /* 确保左对齐 */} }
     @media (max-width: 767.98px) {
       .about__exp__list li {
         width: 100%; } }   
@@ -2543,6 +2550,9 @@ Breadcrumb
   .about__award__wrap {
     margin-top: 0px;
     margin-bottom: -58px; }
+  .about__award__wrap_container {
+    align-items: center
+  }
   .about__award__item {
     display: flex;
     align-items: flex-start;
@@ -4907,62 +4917,60 @@ Breadcrumb
     line-height: 1.5; }
 
 /*=============================
-13. Footer
+13. hoben-footer
 =============================*/
-.footer {
-  background: #191B1E;
-  padding: 310px 0 95px; }
+.hoben-footer {
+  background: #f0f0f0;
+  padding: 50px 0 50px; }
   @media (max-width: 767.98px) {
-    .footer {
-      padding: 310px 0 20px; } }
-  .footer__widget {
+    .hoben-footer {
+      padding: 40px 0 40px; } }
+  .hoben-footer__widget {
     margin-bottom: 50px; }
-    .footer__widget .fw-title {
+    .hoben-footer__widget .fw-title {
       margin-bottom: 23px; }
-      .footer__widget .fw-title .sub-title {
-        color: #898989;
+      .hoben-footer__widget .fw-title .sub-title {
+        color: #333333;
         font-family: "Roboto", sans-serif;
         font-size: 12px;
         letter-spacing: 0.2em;
         text-transform: uppercase;
         line-height: 1;
         margin-bottom: 15px; }
-      .footer__widget .fw-title .title {
-        color: #fff;
+      .hoben-footer__widget .fw-title .title {
+        color: #333333;
         font-family: "Roboto", sans-serif;
         font-size: 22px;
         text-transform: uppercase;
         margin-bottom: 0; }
-    .footer__widget p {
+    .hoben-footer__widget p {
       margin-bottom: 0;
       color: #898989;
       font-size: 15px; }
-  .footer__widget__text {
+  .hoben-footer__widget__text {
     margin-right: 40px; }
-  .footer__widget__address .mail {
+  .hoben-footer__widget__address .mail {
     color: #fff;
     font-size: 15px; }
-    .footer__widget__address .mail:hover {
+    .hoben-footer__widget__address .mail:hover {
       color: #FCAF17; }
-  .footer__social__list {
+  .hoben-footer__social__list {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 13px; }
-    .footer__social__list li:not(:last-child) {
+    .hoben-footer__social__list li:not(:last-child) {
       margin-right: 17px; }
-    .footer__social__list li a {
+    .hoben-footer__social__list li a {
       display: block;
       font-size: 13px;
       color: #898989;
       line-height: 1; }
-      .footer__social__list li a:hover {
+      .hoben-footer__social__list li a:hover {
         color: #fff; }
 
 .copyright__wrap {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid #2D2D39; }
+  max-width: 100%; }
   .copyright__wrap .copyright__text p {
     font-size: 14px;
     margin-bottom: 0;
@@ -5245,9 +5253,9 @@ body.active-dark-mode {
     color: #fff; }
     .active-dark-mode .homeContact__form form [type=submit]:hover {
       color: #FCAF17; }
-  .active-dark-mode .footer {
+  .active-dark-mode .hoben-footer {
     background: #151A30; }
-    .active-dark-mode .footer__widget .fw-title .sub-title {
+    .active-dark-mode .hoben-footer__widget .fw-title .sub-title {
       color: #9099AB; }
   .active-dark-mode .copyright__wrap {
     border-color: #313B58; }
