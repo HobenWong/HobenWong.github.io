@@ -2444,20 +2444,49 @@ Breadcrumb
           .about__info__wrap .tab-content .desc {
             padding-right: 0; } }
   .about__exp__list li {
-    width: 58%;
+    width: 60%;
     margin-bottom: 35px; }
     @media (max-width: 1199.98px) {
       .about__exp__list li {
-        width: 90%; } }
+        width: 60%; } }
     @media (max-width: 991.98px) {
       .about__exp__list li {
-        width: 100%; } }
+        width: 60%; } }
+    @media (max-width: 767.98px) {
+      .about__exp__list li {
+        width: 100%; } }   
     .about__exp__list li:last-child {
       margin-bottom: 0; }
   .about__exp__list .title {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: 500;} 
+  .about__exp__list li h6 {
+    margin-top: 10px; /* 根据需要调整 */
+    margin-bottom: 5px; /* 根据需要调整 */
+    padding: 0; /* 确保没有内边距 */
+  }
+  .about__exp__list li p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 垂直居中对齐 */
+    margin: 5px 0; /* 根据需要调整 */
+  }
+  
+  .about__exp__list li p span {
+    flex-basis: 25%; /* 每列占据三分之一的宽度 */
+    text-align: left; /* 左对齐 */
+  }
+  
+  .about__exp__list li p span:nth-child(2) {
+    flex-basis: 50%; /* 每列占据三分之一的宽度 */
+    text-align: center; /* 中间列居中对齐 */
+  }
+  
+  .about__exp__list li p span:nth-child(3) {
+    flex-basis: 25%; /* 每列占据三分之一的宽度 */
+    text-align: right; /* 右侧列右对齐 */
+  }
   .about__exp__list p {
     margin-bottom: 0; 
     padding-top: 15px;
@@ -2478,10 +2507,13 @@ Breadcrumb
     .about__skill__item .title {
       font-family: "Roboto", sans-serif;
       color: #68666C;
-      text-transform: uppercase;
       font-size: 14px;
       letter-spacing: 0.02em;
-      flex: 1;}
+      vertical-align: middle;
+      align-items: center;
+      text-align:left;
+      justify-content:center;
+      margin-top: 20px;}
       .about__skill__item .num {
         font-family: "Roboto", sans-serif;
         color: #68666C;

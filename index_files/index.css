@@ -255,6 +255,31 @@
   font-weight: bold;
 }
 
+.about__skill__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 在父元素内两端对齐 */
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.about__skill__item h5,
+.about__skill__item p {
+  margin: 0; /* 移除默认外边距 */
+  padding: 0; /* 移除默认内边距 */
+}
+
+.about__skill__item h5 {
+  flex: 1; /* 占据剩余空间 */
+  font-size: 18px;
+}
+
+.about__skill__item p {
+  flex-shrink: 0; /* 防止缩小 */
+  font-size: 16px;
+}
+
+
 /* 内容样式 */
 .content {
   margin: 10px 0;
